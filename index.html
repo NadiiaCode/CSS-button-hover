@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple hover button</title>
+  </head>
+  <body>
+    <div class="container">
+      <button id="button">Buy now</button>
+    </div>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: black;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      button {
+        width: 200px;
+        height: 60px;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        color: black;
+        background-color: yellow;
+        border: 3px solid rgba(121, 255, 88, 0.4);
+        border-radius: 45px;
+        box-shadow: 0px 10px 12px -2px rgb(67, 68, 68),
+          0px -10px 9px -2px rgb(67, 68, 68);
+        transition: transform 1s;
+      }
+
+      button:hover {
+        background-color: #00ffdd;
+        box-shadow: 0px 10px 12px -2px rgb(67, 68, 68),
+          0px -10px 9px -2px rgb(67, 68, 68);
+        color: black;
+        border: 3px solid rgba(252, 255, 72, 0.6);
+        transform: translateY(-8px);
+      }
+    </style>
+  </body>
+</html>
